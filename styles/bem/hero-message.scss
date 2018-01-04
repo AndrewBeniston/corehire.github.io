@@ -1,0 +1,18 @@
+.hero-message{
+  background-image: linear-gradient(to right, $color-primary, #17c9de);
+  padding: 100px 0;
+  text-align: center;
+}
+.hero-message--green{
+    background-image: linear-gradient(to right, #17c9de, #17de9a);
+}
+.hero-message--yellow{
+    background-image: linear-gradient(to right, #17de9a, #CDDC39);
+}
+.hero-message__text{
+  margin: 0;
+  line-height: 45px;
+  font-weight: 300;
+  text-transform: initial;
+  color: #fff;
+}

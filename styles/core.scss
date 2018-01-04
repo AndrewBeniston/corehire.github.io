@@ -1,0 +1,33 @@
+$transition-style:            	cubic-bezier(.24,.67,0,1.03);
+$transition-speed:            	1500ms;
+
+.material-video-container{
+    transition: background 500ms $transition-style, opacity 500ms $transition-style;
+    will-change: background, opacity;
+}
+.material-video-container__close{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    position: absolute;
+    font-size: 38px;
+    right: 16px;
+    top: 16px;
+    opacity: 0;
+    transition: opacity 500ms $transition-style;
+    will-change: opacity;
+    &:hover{
+        color: #fff;
+    }
+}
+.material-video-container__inner{
+    border-radius: 5px;
+    .material-btn{
+        &.material-btn--normal-transition{
+            transition: opacity $transition-speed*0.5 $transition-style, visibility $transition-speed $transition-style, transform $transition-speed $transition-style;
+            will-change: opacity, visibility, transform; 
+        }
+    }
+}

@@ -1,0 +1,99 @@
+.hero-strengths{
+    padding: 80px 0;
+    .container > .row{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        min-height: 24em;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+
+    }
+}
+.hero-strengths--photography{
+    padding: 30px 0 0;
+}
+.hero-strengths--no-flex{
+    .container > .row{
+        display: block;
+        min-height: initial;
+    }
+}
+
+.hero-strengths__title {
+    font-size: 42px;
+    font-weight: 300;
+    color: $color-primary;
+    -webkit-background-clip: text;
+    background-image: -webkit-linear-gradient(left, #17c9de, $color-primary);
+    background-image: linear-gradient(to right, #17c9de, $color-primary);
+    -webkit-text-fill-color: transparent;
+    margin: 0 0 20px; 
+}
+
+.hero-strengths__slogan{
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.hero-strengths__link{
+    display: inline-block;
+    margin-bottom: 32px;
+    border-radius: 3px;
+    box-shadow: $z-shadow-2;
+    transition: box-shadow 500ms $transition-style;
+    will-change: box-shadow;
+    contain: content;
+    overflow: hidden;
+    &:hover{
+        box-shadow: $z-shadow-3;
+    }
+}
+
+.hero-strengths__items{
+    margin-bottom: -24px;
+}
+.hero-strengths__items--for-web{
+    .hero-strengths__item-title{
+        margin-bottom: 32px;
+    }
+}
+
+.hero-strengths__item{
+    max-width: 104px;
+    margin: 0 auto;
+}
+.hero-strengths__item--no-max-width{
+    max-width: 100%;
+}
+.hero-strengths__item--svg-circle{
+    border-radius: 50%;
+    box-shadow: $z-shadow-2;
+    position: relative;
+    margin-bottom: 16px;
+    &:after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+}
+.hero-strengths__item-title{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 10px 0 24px;
+}
