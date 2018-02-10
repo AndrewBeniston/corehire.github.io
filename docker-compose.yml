@@ -16,7 +16,7 @@ services:
       - 8080:80
     volumes:
       - ./.tmp/uploads:/var/www/html/wp-content/uploads
-      - ./theme:/var/www/html/wp-content/themes/cirehire_dev
+      - ./theme:/var/www/html/wp-content/themes/corehire_dev
       - ./.tmp/themes:/var/www/html/wp-content/themes
     depends_on: 
      - db
